@@ -1,0 +1,21 @@
+.works__img {
+    width: 523px;
+    height: 536px;
+}
+
+.box {
+    flex-direction: column;
+    align-items: center;
+}
+
+.part {
+    display: flex;
+    flex-direction: row;
+}
+
+.works-text {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    text-align: center;
+}

@@ -1,0 +1,111 @@
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    display: flex;
+    width: 90px;
+    height: 110px;
+}
+
+nav img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+nav a {
+    font-size: 1.4rem !important;
+}
+
+.recent-post {
+    color: #e3b9a1;
+    font-family: 'Pip';
+    font-style: normal;
+    letter-spacing: .05em;
+    line-height: 1.4em;
+    text-transform: none;
+}
+
+.recent-post p {
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.recent-post a {
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.image-title {
+    line-height: 1em;
+    text-align: left !important;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .07em;
+    text-transform: none;
+    color: #35353b;
+    font-size: max(0.9em, 35.3%);
+}
+
+.image-title p {
+    white-space: pre-wrap;
+    display: inline;
+    margin: 0;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .08em;
+    text-transform: none;
+    line-height: 1.5em;
+    color: #fff;
+    background-color: #bdd0ca;
+    box-shadow: .2em 0 0 #bdd0ca, -.2em 0 0 #bdd0ca;
+    text-align: left !important;
+    font-weight: bold;
+    font-size: 2.3em;
+}
+
+.hrefs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.hrefs__left {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hrefs__right {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hrefs a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #33333300;
+    transition: all .9s ease;
+    -webkit-transition: all .9s ease;
+}
+
+footer a:hover {
+    color: #e3b9a1;
+}
