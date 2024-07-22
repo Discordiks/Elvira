@@ -109,3 +109,8 @@ nav a {
 footer a:hover {
     color: #e3b9a1;
 }
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}

@@ -124,14 +124,15 @@ h1 {
 }
 
 .button {
-    font-family: 'Class';
+    font-family: 'Ebbe';
+    /*Почему не видно класс*/
     background-color: #e3b9a1;
     font-weight: 900;
     padding: 1rem;
     letter-spacing: .08em;
     border-radius: 10px;
     -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    /*-moz-border-radius: 10px;*/
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     text-decoration: none;
@@ -153,7 +154,7 @@ h1 {
     height: 400px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
+    /*-moz-border-radius: 50%;*/
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     background-color: #333;
@@ -177,7 +178,7 @@ h1 {
     flex: 0 0 46%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    /*-moz-border-radius: 10px;*/
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     background-color: #fff;
@@ -214,7 +215,7 @@ h1 {
     height: 200px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    /*-moz-border-radius: 10px;*/
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     background-color: #333;
