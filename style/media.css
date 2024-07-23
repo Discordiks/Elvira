@@ -81,6 +81,12 @@
     }
 }
 
+@media screen and (max-width: 690px) {
+    nav {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 550px) {
     nav {
         display: none;

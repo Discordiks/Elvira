@@ -54,8 +54,7 @@ header nav ul {
 header nav ul li {
     display: flex;
     list-style: none;
-    text-align: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 header nav ul li a {
@@ -65,10 +64,6 @@ header nav ul li a {
     padding: .4rem 1rem;
     transition: all .9s ease;
     border-bottom: 2px solid #33333300;
-    -webkit-transition: all .9s ease;
-    -moz-transition: all .9s ease;
-    -ms-transition: all .9s ease;
-    -o-transition: all .9s ease;
 }
 
 header nav ul li a:hover {
@@ -98,9 +93,9 @@ header nav ul li a:hover {
 }
 
 .my__text p {
+    display: inline;
     font-family: 'Tim';
     font-size: 1.6em;
-    display: inline;
     padding: 0.2em;
     overflow-wrap: break-word;
     white-space: pre-wrap;
@@ -109,12 +104,10 @@ header nav ul li a:hover {
     box-shadow: .2em 0 0 #bdd0ca, -.2em 0 0 #bdd0ca;
     text-align: left !important;
     pointer-events: auto;
-
     font-style: normal;
     letter-spacing: .08em;
     text-transform: none;
     line-height: 1.5em;
-
 }
 
 h1 {
@@ -131,32 +124,19 @@ h1 {
     padding: 1rem;
     letter-spacing: .08em;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    /*-moz-border-radius: 10px;*/
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     text-decoration: none;
     color: #fafafa;
     transition: all .2s;
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    -ms-transition: all .2s;
-    -o-transition: all .2s;
 }
 
 .button:hover {
     background-color: #edd1bf;
-    /*box-shadow: 0 0 10px #5f5f5f;*/
 }
 
 .my__img {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    /*-moz-border-radius: 50%;*/
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     background-color: #333;
 }
 
@@ -177,10 +157,6 @@ h1 {
 .post-item {
     flex: 0 0 46%;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    /*-moz-border-radius: 10px;*/
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     background-color: #fff;
     padding: 2rem;
 }
@@ -214,10 +190,6 @@ h1 {
     width: 400px;
     height: 200px;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    /*-moz-border-radius: 10px;*/
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     background-color: #333;
 }
 

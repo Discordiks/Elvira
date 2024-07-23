@@ -67,7 +67,6 @@ a {
 ._color-blok-blue {
     background-color: #edf7f9;
     margin-top: 15px;
-
 }
 
 ._pading1 {
@@ -82,9 +81,5 @@ a {
     background-color: #e3b9a1;
     color: #fafafa;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    /*-moz-border-radius: 10px;*/
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     padding: 0 5px;
 }
