@@ -20,7 +20,7 @@ body {
 
 p,
 a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 
@@ -34,8 +34,10 @@ a {
 }
 
 ._df-col {
+    height: 96%;
     display: flex;
     flex-flow: column;
+    align-items: center;
 }
 
 ._gap1 {
