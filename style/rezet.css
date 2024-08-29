@@ -7,6 +7,7 @@
 
 body {
     background-color: #fafafa;
+    font-family: 'Nuni';
 }
 
 .body_hide {
@@ -20,7 +21,7 @@ body {
 
 p,
 a {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 
@@ -37,7 +38,7 @@ a {
     height: 96%;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 ._gap1 {

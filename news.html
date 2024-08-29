@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style/new.css">
     <link rel="stylesheet" href="style/rezet.css">
     <link rel="stylesheet" href="style/main.css">
@@ -26,7 +28,18 @@
             <nav>
                 <ul class="_df-row _just-end-gap1 _alig-centr">
                     <li><a href="#" rel="noopener noreferrer">Новости группы</a></li>
-                    <li><a href="blog.html" rel="noopener noreferrer">Портфолио</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;">
+                                Портфолио
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Достижения воспитанников</a></li>
+                                <li><a class="dropdown-item" href="#">Мои достижения</a></li>
+                                <li><a class="dropdown-item" href="#">Курсы повышения квалификации</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="participation.html" rel="noopener noreferrer">Моё участие</a></li>
                     <li><a href="idea.html" rel="noopener noreferrer">Идея</a></li>
                     <li><a href="contact.html" rel="noopener noreferrer">Контакты</a></li>
@@ -48,7 +61,27 @@
                             <div class="popup__text">
                                 <ul class="_df-col _gap1">
                                     <li><a href="#" rel="noopener noreferrer">Новости группы</a></li>
-                                    <li><a href="blog.html" rel="noopener noreferrer">Портфолио</a></li>
+                                    <li>
+                                        <div id="accordionExample">
+                                            <div>
+                                                <h2 class="accordion-header">
+                                                    <a class="accordion-button port" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                                        aria-controls="collapseOne" style="cursor: pointer;">
+                                                        Портфолио
+                                                    </a>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <a href="">Достижения воспитанников</a>
+                                                        <a href="">Мои достижения</a>
+                                                        <a href="">Курсы повышения квалификации</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
                                     <li><a href="participation.html" rel="noopener noreferrer">Моё участие</a></li>
                                     <li><a href="idea.html" rel="noopener noreferrer">Идея</a></li>
                                     <li><a href="contact.html" rel="noopener noreferrer">Контакты</a></li>
@@ -75,67 +108,51 @@
         </div>
         <!-- ********************************************************************** -->
         <div class="works _pading2 _df-row _gap1 _alig-centr">
-            <div class="container">
-                <div class="css-slider-wrapper">
-                    <input type="radio" class="slide-radio1" name="slider" id="slider_1" checked="checked">
-                    <input type="radio" class="slide-radio2" name="slider" id="slider_2">
-                    <input type="radio" class="slide-radio3" name="slider" id="slider_3">
-                    <input type="radio" class="slide-radio4" name="slider" id="slider_4">
-                    <input type="radio" class="slide-radio5" name="slider" id="slider_5">
-                    <div class="slider-pegination">
-                        <label for="slider_1" class="page1"></label>
-                        <label for="slider_2" class="page2"></label>
-                        <label for="slider_3" class="page3"></label>
-                        <label for="slider_4" class="page4"></label>
-                        <label for="slider_5" class="page5"></label>
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide" style="width: 60%;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/new1.png" class="d-block w-100" alt="...">
                     </div>
-                    <div class="next control">
-                        <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_4" class="numb4"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_5" class="numb5"><i class="fa fa-arrow-circle-right"></i></label>
+                    <div class="carousel-item">
+                        <img src="img/new2.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="previous control">
-                        <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_4" class="numb4"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_5" class="numb5"><i class="fa fa-arrow-circle-left"></i></label>
+                    <div class="carousel-item">
+                        <img src="img/new3.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="slider slide1">
-                        <div class="works__img">
-                            <img src="img/new1.png" alt="Первое фото">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="img/new4.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="slider slide2">
-                        <div class="works__img">
-                            <img src="img/new2.jpg" alt="Второе фото">
-                        </div>
-                    </div>
-                    <div class="slider slide3">
-                        <div class="works__img">
-                            <img src="img/new3.jpg" alt="Третье фото">
-                        </div>
-                    </div>
-                    <div class="slider slide4">
-                        <div class="works__img">
-                            <img src="img/new4.jpg" alt="Четвёртое фото">
-                        </div>
-                    </div>
-                    <div class="slider slide5">
-                        <div class="works__img">
-                            <img src="img/new5.jpg" alt="Пятое фото">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="img/new5.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
             </div>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
             <div class="works-text _df-col _gap1">
                 <div class="works-text__h1">Творческая мастерская "Фантазеры"</div>
                 <div class="works-text__text">
-                    <p>В этой мастерской мы занимаемся бумагопластикой и аппликацией.</p><br>
+                    <p>В этой мастерской мы занимаемся бумагопластикой и аппликацией.</p>
                     <p>Бумагопластика - это тоже аппликация, но объёмная. То есть, различные элементы
                         композиции могут располагаться на разном уровне в трехмерной проекции. Поделки в технике
                         бумагопластики иногда имеют вид картин, открыток, то есть, оформляются на жестком фоне, в рамке
@@ -148,54 +165,42 @@
 
         <!-- ********************************************************************** -->
         <div class="works _pading2 _df-row _gap1 _alig-centr">
-            <div class="container">
-                <div class="css-slider-wrapper">
-                    <input type="radio" class="slide-radio6" name="slider2" id="slider_6" checked="checked">
-                    <input type="radio" class="slide-radio7" name="slider2" id="slider_7">
-                    <input type="radio" class="slide-radio8" name="slider2" id="slider_8">
-                    <input type="radio" class="slide-radio9" name="slider2" id="slider_9">
-                    <div class="slider-pegination">
-                        <label for="slider_6" class="page6"></label>
-                        <label for="slider_7" class="page7"></label>
-                        <label for="slider_8" class="page8"></label>
-                        <label for="slider_9" class="page9"></label>
+            <div id="carouselExampleIndicators2" class="carousel carousel-dark slide" style="width: 60%;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 21"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                        aria-label="Slide 22"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                        aria-label="Slide 23"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+                        aria-label="Slide 24"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/new6.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="next control">
-                        <label for="slider_6" class="numb6"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_7" class="numb7"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_8" class="numb8"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_9" class="numb9"><i class="fa fa-arrow-circle-right"></i></label>
+                    <div class="carousel-item">
+                        <img src="img/new7.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="previous control">
-                        <label for="slider_6" class="numb6"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_7" class="numb7"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_8" class="numb8"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_9" class="numb9"><i class="fa fa-arrow-circle-left"></i></label>
+                    <div class="carousel-item">
+                        <img src="img/new8.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="slider2 slide6">
-                        <div class="works__img">
-                            <img src="img/new6.jpg" alt="Первая новость">
-                        </div>
-                    </div>
-                    <div class="slider2 slide7">
-                        <div class="works__img">
-                            <img src="img/new7.jpg" alt="Первая новость">
-                        </div>
-                    </div>
-                    <div class="slider2 slide8">
-                        <div class="works__img">
-                            <img src="img/new8.jpg" alt="Первая новость">
-                        </div>
-                    </div>
-                    <div class="slider2 slide9">
-                        <div class="works__img">
-                            <img src="img/new9.jpg" alt="Первая новость">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="img/new9.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
             </div>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
             <div class="works-text _df-col _gap1">
                 <div class="works-text__h1">Праздник "День Металлурга"</div>
                 <div class="works-text__text">
@@ -218,55 +223,45 @@
 
         <!-- ********************************************************************** -->
         <div class="works _pading2 _df-row _gap1 _alig-centr">
-            <div class="container">
-                <div class="css-slider-wrapper">
-                    <input type="radio" class="slide-radio31" name="slider3" id="slider_31" checked="checked">
-                    <input type="radio" class="slide-radio32" name="slider3" id="slider_32">
-                    <input type="radio" class="slide-radio33" name="slider3" id="slider_33">
-                    <input type="radio" class="slide-radio34" name="slider3" id="slider_34">
-                    <div class="slider-pegination">
-                        <label for="slider_31" class="page31"></label>
-                        <label for="slider_32" class="page32"></label>
-                        <label for="slider_33" class="page33"></label>
-                        <label for="slider_34" class="page34"></label>
-                    </div>
-                    <div class="next control">
-                        <label for="slider_31" class="numb31"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_32" class="numb32"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_33" class="numb33"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_34" class="numb34"><i class="fa fa-arrow-circle-right"></i></label>
-                    </div>
-                    <div class="previous control">
-                        <label for="slider_31" class="numb31"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_32" class="numb32"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_33" class="numb33"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_34" class="numb34"><i class="fa fa-arrow-circle-left"></i></label>
-                    </div>
-                    <div class="slider3 slide31">
-                        <video controls width="100%" height="100%" autoplay="false" muted="true">
+            <div id="carouselExampleIndicators3" class="carousel carousel-dark slide" style="width: 60%;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 31"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                        aria-label="Slide 32"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                        aria-label="Slide 33"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"
+                        aria-label="Slide 34"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video controls class="d-block w-100" width="100%" height="100%" autoplay="false" muted="true">
                             <source src="img/Wild Rift.mp4" type="video/mp4">
                             Ваш браузер не поддерживает встроенные видео!
                         </video>
                     </div>
-                    <div class="slider3 slide32">
-                        <div class="works__img">
-                            <img src="img/new10.jpg" alt="Первая новость">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="img/new10.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="slider3 slide33">
-                        <div class="works__img">
-                            <img src="img/new11.jpg" alt="Первая новость">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="img/new11.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="slider3 slide34">
-                        <div class="works__img">
-                            <img src="img/new12.jpg" alt="Первая новость">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="img/new12.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
             </div>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
             <div class="works-text _df-col _gap1">
                 <div class="works-text__h1">Лето</div>
                 <div class="works-text__text">
@@ -281,14 +276,17 @@
 
         <!-- ********************************************************************** -->
         <div class="works _pading2 _df-row _gap1 _alig-centr">
-            <div class="works__img img13">
-                <img class="img13" src="img/new13.jpg" alt="Семья">
+            <div id="carouselExampleIndicators4" class="carousel carousel-dark slide" style="width: 60%;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/new13.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
             </div>
             <div class="works-text _df-col _gap1">
-                <div class="works-text__h1">Семья</div>
+                <div class="works-text__h1">А вы знаете, что такое семья?</div>
                 <div class="works-text__text">
-                    <p>А вы знаете, что такое семья?<br><br>
-                        «Семья — это счастье, любовь и удача,<br>
+                    <p>Семья — это счастье, любовь и удача,<br>
                         Семья — это летом поездки на дачу.<br>
                         Семья — это праздник, семейные даты,<br>
                         Подарки, покупки, приятные траты.<br>
@@ -301,7 +299,8 @@
                         Всегда будьте вместе, любовь берегите,<br>
                         Обиды и ссоры подальше гоните,<br>
                         Хочу, чтоб про вас говорили друзья:<br>
-                        Какая хорошая ваша семья!»</p>
+                        Какая хорошая ваша семья!»
+                    </p>
                 </div>
             </div>
         </div>
@@ -309,36 +308,32 @@
 
         <!-- ********************************************************************** -->
         <div class="works _pading2 _df-row _gap1 _alig-centr">
-            <div class="container">
-                <div class="css-slider-wrapper">
-                    <input type="radio" class="slide-radio51" name="slider5" id="slider_51" checked="checked">
-                    <input type="radio" class="slide-radio52" name="slider5" id="slider_52">
-                    <div class="slider-pegination">
-                        <label for="slider_51" class="page51"></label>
-                        <label for="slider_52" class="page52"></label>
+            <div id="carouselExampleIndicators5" class="carousel carousel-dark slide" style="width: 60%;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 51"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1"
+                        aria-label="Slide 52"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/new15.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="next control">
-                        <label for="slider_51" class="numb51"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_52" class="numb52"><i class="fa fa-arrow-circle-right"></i></label>
-                    </div>
-                    <div class="previous control">
-                        <label for="slider_51" class="numb51"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_52" class="numb52"><i class="fa fa-arrow-circle-left"></i></label>
-                    </div>
-                    <div class="slider5 slide51">
-                        <div class="works__img">
-                            <img src="img/new15.jpg" alt="Фотография семьи">
-                        </div>
-                    </div>
-                    <div class="slider5 slide52">
-                        <div class="works__img">
-                            <img src="img/new14.jpg" alt="Сертификат семьи">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="img/new14.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
             </div>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
             <div class="works-text _df-col _gap1">
                 <div class="works-text__h1">Многодетная семья</div>
                 <div class="works-text__text">
@@ -352,63 +347,47 @@
         <!-- ********************************************************************** -->
         <!-- ********************************************************************** -->
         <div class="works _pading2 _df-row _gap1 _alig-centr">
-            <div class="container">
-                <div class="css-slider-wrapper">
-                    <input type="radio" class="slide-radio61" name="slider6" id="slider_61" checked="checked">
-                    <input type="radio" class="slide-radio62" name="slider6" id="slider_62">
-                    <input type="radio" class="slide-radio63" name="slider6" id="slider_63">
-                    <input type="radio" class="slide-radio64" name="slider6" id="slider_64">
-                    <input type="radio" class="slide-radio65" name="slider6" id="slider_65">
-                    <div class="slider-pegination">
-                        <label for="slider_61" class="page61"></label>
-                        <label for="slider_62" class="page62"></label>
-                        <label for="slider_63" class="page63"></label>
-                        <label for="slider_64" class="page64"></label>
-                        <label for="slider_65" class="page65"></label>
+            <div id="carouselExampleIndicators6" class="carousel carousel-dark slide" style="width: 60%;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 61"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="1"
+                        aria-label="Slide 62"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="2"
+                        aria-label="Slide 63"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="3"
+                        aria-label="Slide 64"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators6" data-bs-slide-to="4"
+                        aria-label="Slide 65"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/new16.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="next control">
-                        <label for="slider_61" class="numb61"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_62" class="numb62"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_63" class="numb63"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_64" class="numb64"><i class="fa fa-arrow-circle-right"></i></label>
-                        <label for="slider_65" class="numb65"><i class="fa fa-arrow-circle-right"></i></label>
+                    <div class="carousel-item">
+                        <img src="img/new17.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="previous control">
-                        <label for="slider_61" class="numb61"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_62" class="numb62"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_63" class="numb63"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_64" class="numb64"><i class="fa fa-arrow-circle-left"></i></label>
-                        <label for="slider_65" class="numb65"><i class="fa fa-arrow-circle-left"></i></label>
+                    <div class="carousel-item">
+                        <img src="img/new18.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="slider slide61">
-                        <div class="works__img">
-                            <img src="img/new16.jpg" alt="Первое фото">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="img/new19.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="slider slide62">
-                        <div class="works__img">
-                            <img src="img/new17.jpg" alt="Второе фото">
-                        </div>
-                    </div>
-                    <div class="slider slide63">
-                        <div class="works__img">
-                            <img src="img/new18.jpg" alt="Третье фото">
-                        </div>
-                    </div>
-                    <div class="slider slide64">
-                        <div class="works__img">
-                            <img src="img/new19.jpg" alt="Четвёртое фото">
-                        </div>
-                    </div>
-                    <div class="slider slide65">
-                        <div class="works__img">
-                            <img src="img/new20.jpg" alt="Пятое фото">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="img/new20.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
             </div>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
             <div class="works-text _df-col _gap1">
                 <div class="works-text__h1">Дорогу творчеству!</div>
                 <div class="works-text__text">
@@ -418,25 +397,6 @@
                 </div>
             </div>
         </div>
-        <!-- ********************************************************************** -->
-
-
-        <!-- ********************************************************************** -->
-        <!--<div class="works _pading2 _df-row _gap1 _alig-centr">
-            <div class="works__img"></div>
-            <div class="works-text _df-col _gap1">
-                <div class="works-text__h1">Designing Dashboards</div>
-                <div class="works-text-data _df-row _gap1">
-                    <div class="works-text-data__data _bag-color"><span>2020</span></div>
-                    <div class="works-text-data__text"><span>Dashboards</span></div>
-                </div>
-                <div class="works-text__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perspiciatis, sed amet, a ipsam
-                        ea esse reprehenderit hic ab maiores distinctio quasi architecto deleniti molestias natus
-                        veritatis saepe sapiente enim!</p>
-                </div>
-            </div>
-        </div>-->
         <!-- ********************************************************************** -->
 
         <!-- ********************************************************************** -->
@@ -471,7 +431,16 @@
         <div class="conteiner _pading2 _df-col _alig-centr">
             <div class="hrefs">
                 <a href="#" rel="noopener noreferrer">Новости группы</a>
-                <a href="blog.html" rel="noopener noreferrer">Портфолио</a>
+                <div class="dropdown">
+                    <a data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;">
+                        Портфолио
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Достижения воспитанников</a></li>
+                        <li><a class="dropdown-item" href="#">Мои достижения</a></li>
+                        <li><a class="dropdown-item" href="#">Курсы повышения квалификации</a></li>
+                    </ul>
+                </div>
                 <a href="participation.html" rel="noopener noreferrer">Моё участие</a>
                 <a href="idea.html" rel="noopener noreferrer">Идея </a>
                 <a href="contact.html" rel="noopener noreferrer">Контакты </a>
@@ -492,6 +461,9 @@
     <!-- *********************************************************************** -->
     <!-- НИжняя часть сайта -->
     <!-- *********************************************************************** -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

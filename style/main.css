@@ -23,6 +23,10 @@
     src: url('../fonts/ofont.ru_KudrashovC.ttf');
 }
 
+@font-face {
+    font-family: 'Nuni';
+    src: url('../fonts/Nunito-VariableFont_wght.ttf');
+}
 
 #newfont {
     font-family: 'Pip';
@@ -37,6 +41,10 @@
 /* шапка сайта */
 /* ********************************************************* */
 
+.port {
+    font-size: 1.3rem;
+}
+
 header {
     width: 100%;
     margin-top: 10px;
@@ -47,14 +55,15 @@ header {
     justify-content: space-between;
 }
 
-header nav ul {
+/*header nav ul {
     height: 100%;
-}
+}*/
 
 header nav ul li {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    font-family: 'Nuni';
 }
 
 header nav ul li a {
@@ -67,7 +76,6 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    /*border-bottom: 2px solid #333;*/
     color: #e3b9a1;
 }
 
@@ -118,7 +126,6 @@ h1 {
 
 .button {
     font-family: 'Ebbe';
-    /*Почему не видно класс*/
     background-color: #e3b9a1;
     font-weight: 900;
     padding: 1rem;
@@ -180,11 +187,11 @@ h1 {
 /* ********************************************************* */
 .works {
     border-bottom: 1px solid #66666680;
-    height: 550px;
+    height: 600px;
 }
 
 .works-text {
-    max-width: 40%;
+    width: 40%;
     display: flex;
 }
 
@@ -200,10 +207,6 @@ h1 {
     object-fit: contain;
 }
 
-.img13 {
-    width: 721.283px;
-}
-
 .works-text-data {
     display: flex;
     justify-content: start;
@@ -213,7 +216,7 @@ h1 {
     font-size: 2rem;
     font-weight: 800;
     color: #101741;
-    text-align: center;
+    text-align: left;
 }
 
 .works-text-data__data {
@@ -224,6 +227,10 @@ h1 {
 .works-text-data__text {
     font-size: 1.3rem;
     color: #848484;
+}
+
+.works-text__text {
+    text-align: left;
 }
 
 /* ********************************************************* */
@@ -242,11 +249,6 @@ h1 {
 /* НИжняя часть сайта */
 /* ********************************************************* */
 
-
-
-
-
-
 /* ********************************************************* */
 /* Блог */
 /* ********************************************************* */
@@ -258,3 +260,6 @@ h1 {
 /* ********************************************************* */
 /* Блог */
 /* ********************************************************* */
+.posts {
+    font-family: 'Nuni';
+}
